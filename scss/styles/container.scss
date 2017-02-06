@@ -1,0 +1,37 @@
+#container{
+	min-height:700px;
+	padding: 0 3em;
+
+	#menu{
+		$base: #ED6A5A;
+		position: fixed;
+		margin-right: 5em;
+		padding-right: 2em;
+		background: $base;
+		border-radius: 50%;
+		text-align: right;
+
+
+		ul{
+			list-style-type: none;
+			padding:0;
+
+			a{
+				border-right: 3px solid #AB6119;
+				display: block;
+				padding: 0.3em 1em;
+				font-size:2.3em;
+				font-weight: 600;
+				color: #12596A;
+				text-decoration: none;
+			}
+
+		}
+	}
+
+	#main{
+		padding-right: 3em;
+		margin-left: 400px;
+	}
+
+}

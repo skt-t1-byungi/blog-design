@@ -1,0 +1,73 @@
+#comments{
+	background:#FFFDE0;
+	color: #3b4224;
+	border-radius: 1em 1em 0 0;
+
+	padding: 0.5em 2em;
+	
+	font-size: 1.1em;
+	line-height: 1.6em;
+
+	.title{
+		font-size: 2.6em;
+		color: #A3B272;
+		position: relative;
+		top: -20px;
+	}
+
+	& > ul{
+		padding : 0;
+	}
+
+	ul{
+		list-style-type: none;
+		
+		li{
+			margin-bottom: 30px;
+			padding:0 0.5em;
+
+			.info{
+				.author{
+					font-weight: 700;
+					padding-right: 1em;
+					border-right: 2px solid #DCD8AA;
+					margin-right: 1em;
+					vertical-align: middle;
+					color: #85557C;
+
+					&.admin{
+						b{
+							letter-spacing: 2px;
+							font-size: 2.6em;
+							font-weight: 400;
+							font-family: 'Gidugu', cursive;
+							color: #84934E;
+						}
+					}
+				}
+
+				time{
+					letter-spacing: 0.5em;
+					font-size: 0.8em;
+					color: #BAB677;
+				}
+			}
+
+			.action{
+				line-height: 0.9em;
+				a{
+					color: #D46A6A;
+					margin-right: 0.3em;
+					font-size: 0.8em;
+				}
+			}
+
+			&:last-child{border-bottom:0}
+
+
+			& > ul{
+				padding-top: 30px;
+			}
+		}
+	}
+}

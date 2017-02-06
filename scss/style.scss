@@ -1,0 +1,21 @@
+@import "./reset";
+
+body{
+	background: #F4F1BB;
+	font-family: 'Nanum Myeongjo', serif;
+}
+
+*:focus {
+    outline: #70899C solid 2px;
+}
+
+::-moz-selection { background: darken(#F4F1BB, 10%); }
+::selection { background: darken(#F4F1BB, 10%); }
+
+@import "./styles/searchbar";
+@import "./styles/header";
+@import "./styles/container";
+@import "./styles/article";
+@import "./styles/comments";
+@import "./styles/commentWrite";
+@import "./styles/footer";

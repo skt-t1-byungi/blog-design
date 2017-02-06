@@ -1,0 +1,110 @@
+#commentWrite, #commentReplyWrite{
+
+	&#commentWrite{
+			border-radius: 0 0 1em 1em;
+	}
+
+	background: #DAE3BF;
+	
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0.8em 2em;
+
+		*:focus{
+			outline: darken(#C4CFA3, 20%) solid 2px;
+		}		
+
+		fieldset{
+			border: 0;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			
+			box-sizing: border-box;
+
+			&:nth-child(1){
+				width: 33%;
+				margin-right: 2%;
+			}
+
+			&:nth-child(2){
+				width: 65%;
+
+				label{
+					height: 100%;
+				}
+			}
+
+			label{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 13px;
+
+				&:last-child{ margin:0 }
+
+				span{
+					font-size: 1.6em;
+					line-height: 0.8em;
+					font-family: 'Gidugu', cursive;
+					color: darken(#DAE3BF, 40%);
+					margin-bottom: 5px;
+				}
+			}
+
+			input,textarea{
+				border: 0;
+				background: lighten(#C4CFA3, 2%);
+				color: darken(#5E5C36, 5%);
+				padding: 0.8em 1em;
+				line-height: 1.6em;
+				
+				&::-webkit-input-placeholder{
+					color: #5E5C36;
+				}
+			}
+
+			textarea{
+				height: 100%;
+				resize: none;
+
+				& ~ .limit{
+					opacity: 0.8;
+					position: absolute;
+					bottom: 5px;
+					right: 30px;
+
+					& > strong{
+						font-size: 1.2em;
+						margin-right: 0.2em;
+					}
+				}
+			}
+		}
+		
+		.action{
+			width: 100%;
+			padding: 0.5em 0;
+			text-align: right;
+
+			button{
+				cursor: pointer;
+				font-family: 'Gidugu', cursive;
+ 				border: 0;
+ 				padding: 0.1em 1.6em;
+ 				line-height: 1em;
+ 				font-size: 1.6em;
+ 				font-weight: 400;
+ 				border-radius: 3px;
+ 				background: darken(#DAE3BF, 35%);
+				color: #eee;
+
+ 				&[type=submit]{
+ 					background: #803F70;
+ 					margin-right: 5px;
+ 				}
+			}
+		}
+	}
+
+}

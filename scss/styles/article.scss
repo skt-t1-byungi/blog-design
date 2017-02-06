@@ -1,0 +1,38 @@
+
+#article{
+	margin-bottom: 100px; 
+
+	.title{
+		color: #3A898D;
+		font-size: 3em;
+		padding: 0.3em 1em;
+		line-height: 1.6em;
+	}
+
+	.info{
+		font-size: 1.8em;
+		margin-bottom: 2em;
+
+		.category{
+			color: #5A3C75;
+			font-weight: 700;
+			padding: 0 1em;
+			margin-right: 1em;
+			border-right: 2px solid #D0CC83;
+			vertical-align: middle;
+		}
+
+		time{
+			font-size: 0.6em;
+			color: #8E8A33;
+			letter-spacing: 0.6em;
+		}
+	}
+
+	content{
+		color: #444;
+		font-size: 1.35em;
+		line-height: 1.7em;
+		text-indent: 1em;
+	}
+}
